@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  position: relative;
+  overflow: scroll;
+  flex-wrap: wrap;
+  top: 8em;
+  height: 80%;
+  padding: 0 4em 2em;
+  gap: 1em; 
+
+  img {
+      position: relative;
+      height: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    justify-content: center;
+    padding: 0 2em 2em;
+       
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: scroll;
+  top: 8em;
+  height: 80%;
+  padding: 0 4em 2em;
+}
+
+.project-board {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: left;
+  width: 100%;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 0 2em 2em;
+  }
+
+  .project-board {
+    justify-content: center;
+  }
+}

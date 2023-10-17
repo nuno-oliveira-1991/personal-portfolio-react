@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: scroll;
+  top: 8em;
+  height: 80%;
+  padding: 0 4em 2em;
+
+  a {
+    color: white;
+  }
+
+  a:hover {text-decoration: none;}
+
+  h2 {
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  p {
+    max-width: 600px;
+    margin: 0 0 1em;
+  }
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    padding: 2em;
+    height: calc(100% - 8em);
+    font-size: 0.8em;
+
+    .about-section, .contact-section {
+      width: 100%;
+    }
+  }
+
+  
+}

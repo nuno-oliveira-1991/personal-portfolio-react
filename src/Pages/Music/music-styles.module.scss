@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: scroll;
+  top: 8em;
+  height: 100%;
+  padding: 0 4em 2em;
+}
+
+h2 {
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+.album-board {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: left;
+  width: 100%;
+  gap: 1em;
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: 80%;
+    top: 8em;
+    padding: 0 2em 2em;
+
+    h2 {
+      width: 100%;
+    }
+  }
+
+  .album-board {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+  img {
+    width: 20em;
+    height: 20em;
+  }
+}
+
+.rollover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  background-color: gray;
+  color: black;
+  padding: 2.5em 1.5em 1em;
+  box-sizing: border-box;
+  text-align: center;
+
+  h3, h5 {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 80%;
+    height: 100%;
+  }
+
+  a {
+    color: black;
+  }
+}
+
+.container:hover {
+  
+  .rollover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    color: black;
+    background: lightgray;
+  }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 70%}
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    font-size: 120%;
+    img {
+      height: auto;
+      width: 100%;}
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 100%;
+  }
+}
