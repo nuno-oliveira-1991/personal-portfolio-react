@@ -4,8 +4,8 @@
   overflow: scroll;
   flex-wrap: wrap;
   top: 8em;
-  height: 80%;
-  padding: 0 4em 2em;
+  height: calc(100% - 11em);
+  padding: 0 4em 4em;
   gap: 1em; 
 
   img {
